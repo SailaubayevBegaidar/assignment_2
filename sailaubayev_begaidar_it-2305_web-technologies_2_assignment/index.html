@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #283593;
+            padding: 15px;
+            color: white;
+        }
+        header h1, header p {
+            margin: 0;
+        }
+        .navbar {
+            background-color: #1e88e5;
+            padding: 10px;
+        }
+        .navbar .nav-link {
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .navbar .nav-link:hover {
+            color: #ffca28;
+        }
+        .card {
+            border: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .skill-progress {
+            height: 20px;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            margin-bottom: 15px;
+        }
+        .progress {
+            height: 20px;
+        }
+        .progress .progress-bar {
+            background-color: #1e88e5;
+        }
+        #about {
+            background-color: #f3f4f6;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="text-white py-3 sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <h1>Begaidar</h1>
+                <p>Java developer</p>
+            </div>
+            <nav class="navbar">
+                <ul class="nav d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <section class="mb-4" id="projects">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/GettyImages_127515379.0.jpg" class="card-img-top img-fluid" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Amazon is a multinational technology company known primarily for its e-commerce platform. Founded in 1994, Amazon has expanded into various sectors, including cloud computing, online advertising, digital streaming, and artificial intelligence.</p>
+                            <a href="https://www.amazon.com/" target="_blank" class="btn btn-warning">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/72add67ff9f5065095af6d8eb1e81f79.jpg" class="card-img-top img-fluid" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">YouTube is a video-sharing platform owned by Google. It allows users to upload, view, and share videos of various genres, including music, tutorials, gaming, vlogs, and more.</p>
+                            <a href="https://www.youtube.com/" target="_blank" class="btn btn-warning">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/12644_large.jpg" class="card-img-top img-fluid" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Microsoft is a multinational technology company known for its software products, including the Windows operating system, Office productivity suite, and the Xbox gaming console.</p>
+                            <a href="https://www.microsoft365.com/?from=OfficeKey" target="_blank" class="btn btn-warning">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4" id="about">
+            <h2 class="text-center">About Me</h2>
+            <img src="images/photo_5456343779192728746_y.jpg" alt="My Photo" class="img-fluid rounded-circle" style="width: 100px; height: 100px;"> 
+            <p class="text-center">I am a passionate Java developer with 3 years of experience in building scalable web applications using Spring Boot and modern Java frameworks. My focus is on writing clean, maintainable code and delivering user-centric solutions. I am always eager to learn new technologies and improve my skills.</p>
+            <p class="text-center">In addition to my Java expertise, I have a strong foundation in Git, Linux, and containerization technologies such as Docker. I enjoy collaborating with cross-functional teams to create effective software products.</p>
+        </section>
+
+        <section class="mb-4" id="contacts">
+            <h2 class="text-center">Contacts</h2>
+            <p class="text-center"><i class="fas fa-envelope"></i> Email: 230107@astanait.edu.kz</p>
+            <p class="text-center"><i class="fas fa-phone"></i> Phone: +7 777 777 77 77</p>
+        </section>
+
+        <section class="mb-4" id="skills">
+            <div class="container">
+                <h2 class="text-center">Skills</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <h5>Spring Boot</h5>
+                        <div class="skill-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5>Git</h5>
+                        <div class="skill-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5>Linux</h5>
+                        <div class="skill-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Begaidar. All Rights Reserved.</p>
+        <ul class="list-unstyled">
+            <li>
+                <a href="https://github.com/sailaubayevbegaidar" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+                <a href="mailto:230107@astanait.edu.kz">Email</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
